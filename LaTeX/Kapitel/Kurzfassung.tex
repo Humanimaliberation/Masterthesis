@@ -1,0 +1,54 @@
+%% Version 2022-07-08
+%% LaTeX-Vorlage für Abschlussarbeiten
+%% Erstellt von Nils Potthoff, ab 2020 erneuert und ausgebaut von Simon Lohmann
+%% Lehrstuhl Automatisierungstechnik/Informatik Bergische Universität Wuppertal
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% INFO: Die Kurzfassung wird immer auf Deutsch UND Englisch benötigt!
+
+% Kurzfassung auf Deutsch
+\begingroup 
+	\selectlanguage{ngerman}% der folgende Text ist auf Deutsch
+	\section*{Kurzfassung}
+	% Intro
+	Die Wärmewende mit den Ziel der Dekarbonisierung des Wärmesektors ist integraler Bestandteil der Energiewende zur Erreichung klimaneutraler Energiesysteme. Die Dekarbonisierung des Wärmesektors kann zum Einen durch die Senkung des Wärmeverbrauchs und zum Anderen durch die Steigerung des Anteils Erneuerbarer Energien bei der Wärmeerzeugung erreicht werden. Zur Umsetzung beider Optionen bietet sich eine Vielzahl technischer Maßnahmen an. Welche Maßnahmen sich je nach lokalen Begebenheiten am besten eignen, lässt sich durch Wärmeplanungen bestimmen. Mittels einer Bestandsaufnahme, Potentialanalysen und Aufstellungen von Zielszenarien wird eine lokale Wärmewendestrategie zur Erreichung der gesetzten Ziele entwickelt. Hierfür bedarf es einer umfassenden Datengrundlage u.a. bezüglich der Gebäudestruktur, des Wärmeverbrauchs und der Wärmeerzeugung. 
+	
+	% Ziel: Daten sichten, auswählen, Tool entwickeln; Daten für D. mit Fokus auf NRW
+	Ziel dieser Thesis ist die Sichtung öffentlich verfügbarer Daten, Auswahl geeigneter Daten für Wärmeplanungen und die Erstellung eines Python-Tools zur systematischen Aufbereitung der ausgewählten Daten für den Export nach QGIS. 
+	
+	% Datengrundlage
+	Als Datengrundlage wurden Datensätze für Basis-Layer, Gebäudestruktur, Wärme-Erzeugung und Wärme-Verbräuchen von Wohngebäuden gewählt. Zu den verwendeten Datensätzen gehören Amtliche Basiskarten, OpenStreetMap Daten, Digitale Verwaltungsgrenzen von Gemeinden, ALKIS-Hausumringe, Zensus Gebäude-, Wohnungs- und Einwohnungsdaten, Schutzgebiete der Landschaftsinformationssammlung des LANUV, Energie-Erzeugungs-Anlagen Standorten des LANUV inklusive Standorten mit KWK-Relevanz und Industrieller Abwärme sowie Raumwärmebedarfs-Modelle des LANUV.
+
+	% Tool
+	Es wurde ein Python-Tool entwickelt, welches modular für alle genannten Datensätze anwendbar ist. Die ausgewählten Datensätze werden automatisch räumlich zugeschnitten, anhand einstellbarer Filter auf gewünschte Merkmale (Zensus) oder Energieträger (Erzeugungs-Anlagen Standorte) reduziert und für die Nutzung in QGIS aufbereitet z.B. durch Reformatierung oder Georeferenzierung.
+	
+	Darüber hinaus können Synthese-Datensätze erstellt werden. Diese sind zum Einen Zensus-Merkmal-Ausprägungen (z.B. Baualtersklassen) zugewiesene ALKIS-Hausumringen und zum Anderen aggregierte estimierte Wärmeverbräuche des Raumwärmebedarfs-Modell des LANUV in einstellbaren Sub-Arealen. Daraus abgeleitet werden spezifische Wärmeverbräuche je Flächeneinheit und Jahr einzelner Sub-Areale als Indikator für die Eignung von Wärmenetzen. Als Sub-Areale können INSPIRE-konformen Gitterzellen, Baublöcken einer Gemeinde, Quartiere, Stadtteile oder beliebige Polygone verwendet werden.
+	
+	Optional können auto-generierte Pre-Analyse-Dateien mit statistischen Auswertungen im .csv-Format erstellt werden. Diese umfassen u.a. Häufigkeits-Verteilungen von Zensus Merkmals-Ausprägungen im originalen, zugeschnittenen Zensus-Datensatz sowie im erstellbaren Synthese-Datensatzes aus Zensus-Gebäudedaten und ALKIS-Hausumringen. 
+	
+	Für die Darstellung der aufbereiteten Daten in QGIS wurden Layer-Style-Definitionen im Github-Repository dieser Arbeit gemeinsam mit dem Python-Tool und der Thesis zum Download bereit gestellt. 
+	
+	Exemplarisch wurde das Tool auf eine Beispielregion um die eingestellten Gemeinden Wuppertal, Velbert und Solingen hin angewandt. Die aufbereiteten Daten für die Region wurden in QGIS visualisiert und exemplarisch analysiert. 
+	
+\endgroup
+
+% Kurzfassung auf Englisch
+\begingroup
+	\selectlanguage{english}% der folgende Text ist auf Englisch
+	\section*{Abstract}
+	The sustainable heat transition with the aim to decarbonise the heat sector is integral part of the sustainable energy transition to reach climate-neutral energy systems. The decarbonisation of the heat sector can on the one hand reached by lowering the heat consumption on the other hand by raising the share of renewable energies in the heat generation. For the realisation of both options exist plenty of technological methods. Which one is the best according to indivudal local conditions can be determined by heat plans (Wärmeplanungen). Based on analysis of the status-quo and potentials aswell as set-up target scenarios local sustainable heat transition strategies are developped. An extensive data base is therefor needed e.g. regarding the composition of buildings, the heat consomption and the heat generation.
+	
+	The aim of this thesis on the one hand is to search and select useful data for heat planning and on the other hand to develop a python-tool for systematic preparation of the chosen data for an export to QGIS. 
+	
+	As data base were data sets chosen for base layers, composition of buildings, heat generation and heat consumption in residential buildings. The chosen data sets are official base maps (Amtliche Basiskarten), OpenStreetMap data, digital administrative borders of municipalities (Digitale Verwaltungsgrenzen), ALKIS house footprints (ALKIS-Hausumringe), Zensus building, flat and population data (Zensus Gebäude-, Wohnungs- und Einwohnungsdaten), protected areas of the landscapes information collection (Landschaftsinformationssammlung) of LANUV, energy generation units positions (Energie-Erzeugungs-Anlagen standorte) including positions of combined heat and power generation relevance and industrial waste heat (Standorte mit KWK-Relevanz und Industrieller Abwärme) as well as space heating demand models (Raumwärmebedarfs-Modelle) of LANUV.
+	
+	The developed python tool can modularly applied on each mentioned data set. The chosen data sets are automatically spatially cropped, reduced according to settable filters for desired features (Zensus) or energy sources (energy generation units positions) and prepared for usage in QGIS e.g. by reformatting or georeferencing.
+	
+	More over synthesis data sets can be created. One is modified ALKIS house footprints with alloted Zensus building feature characteristics (e.g. construction age classes). The other one are modified sub areas with aggregated estimated heat consumptions from the heat space heating demand model of LANUV. Hence specific heat consumptions per square meter and year are derived for each sub area as an indicator for the suitability of heat grids. Sub areas can be chosen at will e.g. city blocks, urban quarters, urban districts or any kind of polygons. 
+	
+	Optinally it is possible to create auto-generated pre-analysis files in .csv-format for statistical analyses. These include among others the incidence of occurring Zensus feature characteristics both in the original Zensus building dataset and in the synthesis data set derived from the Zensus building dataset and the ALKIS house footprints dataset. 
+	
+	To display the preprocessed data in QGIS layer style definitions are made available in the github repository of this work together with the python tool and the thesis.
+	
+	Exemplarily the tool was applied on a sample region around the preset municipalities Wuppertal, Velbert and Solingen. The preprocessed data was visualised in QGIS and exemplarily analysed.
+\endgroup

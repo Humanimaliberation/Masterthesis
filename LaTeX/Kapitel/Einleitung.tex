@@ -1,0 +1,93 @@
+%% Version 2022-07-08
+%% LaTeX-Vorlage für Abschlussarbeiten
+%% Erstellt von Nils Potthoff, ab 2020 erneuert und ausgebaut von Simon Lohmann
+%% Lehrstuhl Automatisierungstechnik/Informatik Bergische Universität Wuppertal
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+\chapter{Einleitung}
+	% Aufhänger für Ansporn was zu tun
+	\textit{\frqq Das rekordwarme Jahr 2022 sollte für uns alle ein erneuter Ansporn sein, beim Klimaschutz endlich vom Reden zum Handeln zu kommen. Wir haben es bisher nicht geschafft, wirkungsvoll auf die Treibhausgasbremse zu treten. Die Erderwärmung schreitet nahezu ungebremst voran.\flqq} Dies schrieb Tobias Fuchs, Vorstand Klima und Umwelt des Deutschen Wetterdienstes (DWD) am 30.12.2022 in der Pressemitteilung zum Deutschlandwetter im Jahr 2022 \cite{DWD_Deutschlandwetter_2022}. 
+
+	% Historischer Kontext (Krisen unserer Zeit)
+	% Hervorhebung der Subtilität und schweren Fassbarkeit der Brisanz
+	% Hervorhebung der Brisanz und Betonung der Wichtigkeit, radikale Änderungen zu ergreifen
+	%Anders als andere Krisen unserer Zeit wie die Corona Pandemie mit Ausbruch im Jahr 2020, die zum Teil klimabedingte Flutkatastrophe im Ahrtal im Jahr 2021 oder der Angriffskrieg Russlands gegen die Ukraine seit Anfang des Jahres 2022 ist der Klimawandel keine plötzlich aufkommende Bedrohung, sondern ein schon seit Jahrzehnten anhaltender Prozess, der sich immer stärker bemerkbar macht. Steigende Temperaturen, Veränderungen im Niederschlagsverhalten und die Zunahme von Extremwetterereignissen sind nur einige der Folgen des Klimawandels, die bereits heute spürbar sind für uns Menschen wie für unsere nicht-menschliche Mitwelt. Die bereits heute spürbaren Auswirkungen sind noch die Folgen Jahrzehnte zurückliegender Treibhausgasemissionen. Konkret heißt das, um Ökozide mit Massensterben und der Vernichtung unzähliger Lebensräume als Folge der Treibhausgasemissionen der letzten und nächsten Jahrzehnte zu verhindern, sind mit äußerster Dringlichkeit radikale Maßnahmen zu ergreifen.
+	
+	% Ins Handeln kommen: Wärmewende
+	Die Wärmewende ist ein guter Ansatz, um, wie Tobias Fuchs schreibt, \frqq zum Handeln zu kommen\flqq. Im Zuge der Energiewende rückt die Wärmewende immer mehr in den Fokus der politischen Agenden, da die Wärmeversorgung einen erheblichen Anteil am Energieverbrauch und der gesamten Treibhausgasbilanz ausmacht. Um die Dekarbonisierung des Wärmesektors zu erreichen, müssen daher Maßnahmen ergriffen werden, um den Energieverbrauch zu senken und den Anteil erneuerbarer Energien in der Wärmeversorgung zu erhöhen. 
+	
+	% Thesis Thema
+	Mit dieser Master-Thesis soll durch die Entwicklung eines python-Tools zur systematische Aufbereitung von Daten für Wärmeplanungen ein positiver Beitrag für die Wärmewende geleistet werden. 
+	
+	
+	
+	% Notes:
+	% Einleitung/Einführung ins Thema
+	% Lesende an die Hand nehmen? (Klima-)Psychologische Ansätze? 
+	% Occhams Razor / KISS-Prinzip: Keep it simple, stupid! 
+	
+	% 1) Was ist der Inhalt? -> Einleitung
+	% 2) Warum ist das Thema wichtig? -> Motivation
+	% 3) Was ist die konkrete Problemstellung und Zielsetzung die angegangen werden soll?
+	
+	
+	
+	
+	%Angesichts der umso katastrophaleren Folgen eines weiterhin nahezu ungebremsten Klimawandels, ist eine radikale Transformation aller Lebensbereiche dringend zur Vorbeugung und Anpassung geboten.  
+
+	
+	
+	\section{Motivation}
+		% Hier soll das Thema motiviert werden.
+		% Bitte nicht "Ich bin besonders motiviert, weil ..."
+		% sondern "Thema XY ist wichtig/muss untersucht/soll entwickelt werden, weil ..." 
+		
+		% Ausgangssituation
+		In den letzten zwei Jahrzehnten hat sich nicht viel getan hinsichtlich der zu erreichenden Klimaneutralität im Wärmesektor. Gas und Öl sind nach wie vor die Haupt-Energieträger zur Wärmebereitstellung. \cite{Umweltbundesamt_Energieverbrauch_Wärme}
+		
+		% Mögliche Hebel
+		Um Klimaneutralität im Wärmesektor zu erreichen, benötigt es sowohl eine Verbrauchsreduzierung als auch einen Umstieg auf Erneuerbare Energien als Wärmequellen, kurz gesagt: Eine umfassende Wärmewende. Ob nun energetische Sanierungen, beispielsweise durch Austausch von Heizungstechnologien oder der Erhöhung des Dämmstandards und/oder der Anschluss an ein Wärmenetz oder die Erschließung bestimmter neuer Wärmequellen im jeweiligen Einzelfall die beste Lösung darstellt hängt dabei von zahlreichen Faktoren ab.
+		
+		% Zweck von Wärmeplanungen
+		Mithilfe von Wärmeplanungen lassen sich zielgerichtet Strategien entwickeln, um den Wärmeverbrauch insgesamt zu senken und um den Bedarf nachhaltig und klimafreundlich zu decken. Wärmeplanungen können somit dazu dienen, klimagerechtere Entwicklungspfade und Handlungsperspektiven aufzuzeigen. Damit sind Wärmeplanungen ein wirkungsvolles Instrument der Wärmewende.  
+		
+		% Wichtigkeit der Arbeit, um Wärmeplanungen umsetzen zu können
+		Zur Durchführung von Wärmeplanungen sind eine umfassende Datengrundlage und geeignete Werkzeuge zur Aufbereitung der vorhandenen Daten vonnöten. Deshalb ist die Sichtung und Auswahl geeigneter Daten und die Entwicklung von passenden Software-Tools von besonderer Wichtigkeit. 
+		
+		
+		%Die noch möglichen globalen Treibhausgasemissionen, um eine globale Klimaerwärmung auf 1,5°C gegenüber XXX zu begrenzen, belaufen sich nach XXX [IPCC] zum Zeitpunkt der Abgabe dieser Arbeit auf von XXX t CO2-Äquivalente.\\
+		
+		%Das im Pariser Klima-Abkommen 20XX auch von Deutschland mitbeschlossene Ziel die 1,5°C-Grenze einzuhalten erfordert zur Einhaltung tiefgreifende gesellschaftliche Veränderungen in sämtlichen Lebensbereichen, welche noch über die nationalen Entwicklungspläne Deutschlands hinausreichen. [Quelle??? XXX]\\
+		
+		% Vermeidungsstrategie, Klimawandel abwehren
+		% Alt. positive Handlungsperspektive: weil wegen Klimapsychologie und so ... dafuq
+		% Nachhaltigere Bedürfnis-Befriedigung: 
+
+	\section{Problemstellung \& Ziele}
+		% Hier sollen die Problemstellung und das Ziel der Thesis kurz in eigenen Worte erläutert werden.
+		
+		% Problemstellung: Geeignete Datengrundlage zur zielgerichteten Strategieentwicklung
+		Eine fundierte Auswahl der geeignetsten Strategie je nach Region lässt sich hierbei nur bestimmen, wenn die Datenlage eine ausreichende Analyse des Ist-Zustandes und eine Gegenüberstellung der verschiedenen Optionen in Bezug auf deren Wirtschaftlichkeit, Machbarkeit und Klima-, Umwelt- und Sozialverträglichkeit erlaubt.
+		
+		% Grob, welche Daten
+		Wärmeplanungen erfordern hierfür eine umfassende und detaillierte Datengrundlage u.a. zum Wärmeverbrauch, zur Gebäudestruktur, Wärmeerzeugung und EE-Ausbaupotentialen. Daten zum Gebäudebestand umfassen beispielsweise Parameter wie Baualtersklassen, Bewohnung, Dämmstandards, Heizungstechnologien und Verbräuche. Daten zur Erzeugung umfassen beispielsweise Anlagen der Energieerzeugung mit Parametern wie Anlagentypen, installierte Leistungen, jährliche Wärmeerträge, Standorte und Energieträger. 
+		
+		% Ziel: Datensichtung, -Akquise und Tool zur systematischen Aufbereitung
+		Ziel dieser Arbeit ist die Sichtung und Bewertung öffentlich zugänglicher Daten hinsichtlich ihrer Eignung für Wärmeplanungen und die Entwicklung eines Software-Tools in Python, welches zur systematischen Aufbereitung der als geeignet bewerteten Daten für die Nutzung in QGIS eingesetzt werden kann.
+				
+	\section{Aufbau der Thesis}
+		% Überblick über den Aufbau der Thesis. Welche Kapitel behandeln was?
+		Die Master-Thesis ist neben dieser Einleitung gegliedert in die Kapitel Grundlagen, Datengrundlage, Software-Entwicklung, Analyse, Fazit und Ausblick. Zum Überblick über den Aufbau der Thesis wird im Folgenden kurz der Inhalt der jeweiligen Kapitel geschildert. 
+		
+		Zu Beginn werden im Kapitel Grundlagen grundlegende Informationen zur Wärmewende in Deutschland aufgezeigt. Diese schließen allgemeine Daten zum Gebäudebestand sowie der Sanierungsentwicklung und des -potentials mit ein. Darüber hinaus werden die Prinzipien von Wärmeplanungen erläutert und eine Einführung in Geoinformationssysteme (GIS) gegeben. 
+		
+		Danach wird im Kapitel Datengrundlage zunächst die Methodik für den Sichtungsprozess zur Daten-Akquise beschrieben und daraufhin deren Ergebnisse präsentiert. Zudem werden die akquirierten Datensätze einzeln detaillierter charakterisiert, nach Inhalt und Format beschrieben und bewertet. 
+		
+		Im Kapitel Software-Entwicklung wird anfangs anhand der Aufgabenstellung der Thesis ein Lastenheft für das geplante python-Tool definiert. Neben der Beschreibung des Hardware- und Software-Setups für die Entwicklung wird aufbauend auf dem Lastenheft und den Erkenntnissen der Daten-Akquise ein Entwurf der Software-Architektur skizziert. Der größte Teil des Kapitels umfasst eine detaillierte Beschreibung der Implementation der entworfenen Funktionalitäten im python-Tool. 
+		
+		Im Anschluss wird das entwickelte Tool im Kapitel Analyse exemplarisch auf eine Beispielregion angewandt und die Ergebnisse präsentiert und ausgewertet. Aufgrund der Vielzahl verwendeter Datensätze und des hierfür konzipierten modularen Aufbaus des Tools wird die Analyse schrittweise für einzelne Datensätze bzw. Funktionalitäten des Tools durchgeführt. 
+		
+		Abschließend wird im Kapitel Schlussbetrachtung ein Résumé zu den gewonnenen Erkenntnissen und zur Praktikabilität des entwickelten Tools gezogen, daraus Handlungsempfehlungen abgeleitet und ein Ausblick für zukünftige Arbeiten im Bereich Wärmeplanung präsentiert.
+
+		
+		

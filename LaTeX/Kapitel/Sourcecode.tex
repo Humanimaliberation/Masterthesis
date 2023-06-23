@@ -1,0 +1,19 @@
+%% Version 2022-07-08
+%% LaTeX-Vorlage für Abschlussarbeiten
+%% Erstellt von Nils Potthoff, ab 2020 erneuert und ausgebaut von Simon Lohmann
+%% Lehrstuhl Automatisierungstechnik/Informatik Bergische Universität Wuppertal
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Sourcecode}
+
+
+	%Bash Skripte Darstellen, lstlisting style für bash: \\
+	%\url{https://tex.stackexchange.com/questions/46953/unix-command-highlighting-latex} \\
+
+
+	\begin{lstlisting}[language=Bash, label={code:xlsx2csv}, caption={Shell script um Excel-Sheets zu CSV-Dateien zu wandeln.}]
+		ssconvert -S <inputfile.xlsx> <outputfile.%s.csv>
+	\end{lstlisting}
+	Argument -S für Export jedes Excel-Sheets zu seperater Datei. An der Stelle von \%s wird der Name des jeweiligen Sheets hinzugefügt. 
+
+	\texttt{ssconvert -S <inputfile.xlsx> <outputfile.\%s.csv>} \\

@@ -1,0 +1,158 @@
+%% Version 2022-07-08
+%% LaTeX-Vorlage für Abschlussarbeiten
+%% Erstellt von Nils Potthoff, ab 2020 erneuert und ausgebaut von Simon Lohmann
+%% Lehrstuhl Automatisierungstechnik/Informatik Bergische Universität Wuppertal
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Schlussbetrachtungen}
+	\section{Fazit}
+		% Leitfaden: Zusammenfassung, Bewertung, Meinung, Fazit, Ausblick, Schlussfolgerungen und "Botschaft" 
+		
+		% Gebäudewärmeversorgung
+		% -> Umstellung Wärmesektor hinkt weit hinter dem Strom-Sektor zurück (noch etwas besser als Transportsektor)
+		% -> politische Zielsetzung zu niedrig
+		% -> Umstellung möglich, wenn auch schwierig zu stemmen
+	
+		% Sanierungsentwicklung und -potential
+		% -> Deutlich zu langsam für klimaneutralen Gebäudebestand
+		% -> Hohes Potential (sehr alter Gebäudebestand, nicht überall modernisiert)
+		
+		% Sichtung öffentlich verfügbarer Daten und Analyse der Eignung bzgl. der Parameter
+		% -> Vorgenommen, zahlreiche Daten vorhanden, nicht alle frei zugänglich
+		% -> Große Unterschiede je nach Bundesland bzgl. Datenbestand
+		% -> Öffentliches Interesse an Bereitstellung von Verbrauchsdaten und Gebäudealtersdaten für Wärmeplanungen
+		
+		% Auswahl zu nutzender Daten
+		% -> größtenteils NRW spezifische Daten genutzt, LANUV in gewisser Weise Vorreiter gegenüber anderen Ländern
+		
+		% Entwicklung python-Tool
+		% -> 
+	
+		% Intro - Aufgabelstellung erfüllt, Teilaufgaben im Folgenden
+		Im Zuge dieser Arbeit konnte ein Python-Tool zur systematischen Aufbereitung von Daten für Wärmeplanungen entwickelt und exemplarisch auf eine Beispielregion angewandt werden. Sämtliche im Themenblatt erwähnten Teilaufgaben konnten erfüllt werden. \\
+		
+		\textbf{Analyse: Wärmewende und Sanierungspotential/-entwicklung in Deutschland}\\
+		% Ausgangsisuations-Analyse Wärmewende und Bewertung
+		Es wurde eine Analyse der Ausgangssituation des Wärmesektors in Deutschland durchgeführt. Die Ergebnisse zum Tempo der Wärmewende und zur noch bestehenden, überwiegend auf fossilen Energieträgern basierenden Wärmeversorgungsstruktur sind ernüchternd, insbesondere im Hinblick auf die Dringlichkeit einer erfolgreichen Energie- und Wärmewende, um die Folgen des Klimawandels ökosozial verträglich zu halten. Um katastrophale Folgen für unser aller Biosphäre und Lebensgrundlage zu vermeiden, muss die Geschwindigkeit beim Ausbau von Erneuerbaren Energien, klimafreundlicher Heizsysteme und Wärmenetze drastisch erhöht und die nicht-pflegenutzende Art klimaschädlicher exploitativer Ressourcennutzung drastisch reduziert werden. 
+		
+		% Chance Wärmenetze
+		Insbesondere Wärmenetze bieten großes Potential eine resiliente Wärme-Versorgungsinfrastruktur zu realisieren mit langfristig ganzheitlich (ökosozial-wirtschaftlich) guter Bilanz. Wichtige Vorraussetzung hierfür ist, dass diese nicht auf fossilen Energieträgern basieren und nicht zu Preismissbrauchszwecken genutzt werden. Somit zeigen sich neben noch gravierenden Missständen im Status-Quo des Wärmesektors auch realistische positive Handlungsperspektiven auf. 
+		
+		% Sanierungsentwicklung und -potential
+		Auch die Analyse der Sanierungsentwicklung und des -potentials in Deutschland konnte durchgeführt werden. Ähnlich zur obig beschriebenen Analyse zeichnet sich beim Auswerten der Ergebnisse ein durchwachsenes Bild ab. Die Mehrheit aller Wohngebäude stammt noch aus der Zeit vor der ersten Wärmeschutzverordnung 1977. Viele Bauten stammen insbesondere aus der direkten Nachkriegszeit mit historisch bedingt nach heutigen Maßstäben tendenziell schlechten Energiekennwerten während des Baus. Insgesamt lässt sich ein hohes Modernisierungspotential abschätzen. Die energetische Modernisierungsrate müsste jedoch für einen zeitnahen klimaneutralen Gebäudebestand in noch realistischem, wenn auch extremen Maß zunehmen mit einer knappen Vervierfachung der Geschwindigkeit. 
+		
+		% Politische Rahmenbedingungen für Shift von Miet- zu Eigentumswohnung
+		Da keine Erhöhung der energetischen Modernisierungsrate von Wohngebäuden absehbar ist, müssen dringend politische Maßnahmen ergriffen werden. Mögliche Hebel sind zum Beispiel Förderungen zur Finanzierung, Veränderungen von Eigentumsstrukturen und Einführung obligatorischer Maßnahmen. \\
+		
+		\textbf{Sichtung, Bewertung und Auswahl von Daten für Wärmeplanungen}\\
+		% Datengrundlage: Prinzipiell gut (besonders NRW), Liste verwendeter Datensätze, Einschränkung
+		Die Ergebnisse der Sichtung von öffentlich verfügbaren Daten und Bewertung derer Eignung für Wärmeplanungen hat gezeigt, dass bereits eine gute Basis einer Vielzahl geeigneter Daten vorliegen. Dies gilt insbesondere für NRW durch zahlreiche bereit gestellte Daten des LANUV und weitere über die Plattform \textit{OpenGeoData.NRW} gesammelte und angebotene Daten. 
+		
+		% Nicht verfügbare Daten (Infrastruktur, genaue Verbrauchsdaten)
+		Ein Manko, welches sich bei Schaffung einer Datengrundlage jedoch gezeigt hat, ist die nicht flächendeckende und zentrale Verfügbarkeit von Daten zur bestehenden Infrastruktur wie Wärme- oder Gasnetze wie sie bei Netzbetreibenden vorliegen und gebäudescharf aufgelöste Wärme- oder auch Gas- bzw- Ölverbrauchsdaten, wie sie bei Versorgungsunternehmen vorliegen. Insbesondere Daten zu Wärmeverbräuchen von Nicht-Wohngebäuden und zu Prozesswärme-Bedarfen und Abwärme-Potentialen von Gewerbe und Industrie sind nur unzureichend Daten verfügbar. Auch die Analyse der Gebäudealtersstruktur anhand der Daten des Zensus 2011 konnte nicht gebäudescharf vorgenommen werden, da die Daten lediglich in 100~m x 100~m Raster bereit gestellt werden. 
+			
+		% Nötige Entwicklung für die Rechtslage
+		Die Schaffung geeigneter rechtlicher Rahmenbedingungen von Seiten der Legislative ist wichtig, um vorhandenen Daten zur Infrastruktur und gebäudescharfer Verbräuche auf eine einheitliche Art und Weise beispielsweise für Wärmeplanende und Forschende zum Zwecke von Wärmeplanungen nutzbar zu machen. Ein gutes Beispiel in diese Richtung bietet das Klimaschutzgesetz Baden-Württembergs, welches Wärmeplanende dazu ermächtigt zum Zwecke von Wärmeplanungen detaillierte Verbrauchsdaten von Versorgungsunternehmen zu erheben.
+		
+		% Integrierte Datensätze im Tool
+		Mit dem entwickelten Python-Tool konnte trotz dieser Limitierungen eine gute Datengrundlage für Wärmeplanungen geschaffen werden. Das Tool ermöglicht die systematische Datenaufbereitung einer Vielzahl an Datensätze. Zur Auswahl verwendeter und ausgewerteter Datensätze gehören Amtliche Basiskarten (ABK), OpenStreetMap Karten, Hausumringe des Amtlichen Liegenschaftskataster-Informationssystems (ALKIS), Gebäude- und Wohnungsdaten des Zensus 2011, Raumwärmebedarfsmodelle (RWB-Modelle) des LANUV, Daten zu Standorten von Energieerzeugungs-Anlagen, mit KWK-Relevanz oder Industriellem Abwärmepotential des LANUV und Daten über Schutzgebiete in der Landschaftsinformationssammlung (LINFOS) des LANUV. \\
+		
+		\textbf{Implementierte Funktionalitäten im entwickelten Python-Tool}\\
+		% Prä-Prozess-Routinen
+		Zu den implementierten Funktionalitäten des entwickelten Python-Tools gehören u.a. Prä-Prozessierungs-Routinen für den Zuschnitt der Daten auf eine gewünschte Region, für die Bereinigung von Daten durch Filterung nach Merkmalen (Zensus) bzw. Energieträger oder Aggregationsniveau (Erzeugungs-Anlagen Standorte, LANUV) und für die Reformatierung zur Aufbereitung für QGIS (Zensus) und für die Kennzeichnung von Datenlücken (Zensus). Für drei Datensätze konnte eine vollständig automatisierte Datenaufbereitung implementiert werden, welche zusätzlich, falls nötig, die benötigten Daten herunterlädt und aufbereitet (ABK, RWB-Modelle, LINFOS). In den anderen Fällen müssen die Rohdaten zunächst manuell heruntergeladen werden. 
+		
+		Kritisch anzumerken ist, dass sich für die Aufbereitung der ALKIS-Hausumringe retrospektiv betrachtet eine Gebäude-Typisierung anhand der Gebäudefunktion gleich jener im RWB-Modell des LANUV besser geeignet hätte als die eigene, wenige detaillierte Variante. 
+		
+		% Post-Prozess-Routinen
+		Ebenfalls implementiert sind Post-Prozessierungs-Routinen, um Synthese-Datensätze zu erstellen. Dazu gehören modifizierte Hausumring-Daten des ALKIS-Datensatzes, welchen Merkmals-Ausprägungen des Zensus-Gebäudedatensatzes wie Gebäudealtersklassen zugewiesen werden oder Sub-Areale, in welchen Werte wie estimierte Wärmeverbräuche aggregiert werden. Daraus abgeleitet werden dann spezifische Wärmeverbräuche je Fläche und Jahr als Indikator für die Eignung von Wärmenetzen. Sub-Areale können Gitterzellen oder andere relativ feingliedrige, regionale Einteilungen wie Baublöcke oder Quartiere einer Gemeinde sein. 
+		
+		% Pre-Analyse-Routinen
+		Das Tool verfügt darüber hinaus über mehrere Pre-Analyse-Routinen, welche die automatische Generierung mehrerer Statistiken ermöglicht. Implementiert sind diese für Datensätze wie die Gebäude- und Wohnungsdaten des Zensus, den Hausumringen des ALKIS-Datensatzes und des erstellten Hausumring-Synthese-Datensatzes. Ermittelt werden Häufigkeitsverteilungen von Ausprägungen gewählter Zensus-Merkmale wie der Baualtersklasse, dem Heiztyp oder der Wohnungs-Eigentums- bzw. -Bewohnungsstruktur in der untersuchten Region oder von Gebäudetypen gemäß der im ALKIS definierten Gebäudefunktion. \\
+		
+		\textbf{Exemplarische Anwendung des Python-Tools}\\
+		% Exemplarische Anwendung auf eine Region
+		Exemplarisch wurde das Tool auf eine Beispielregion um Wuppertal, Velbert und Solingen herum angewandt. Es konnte die Korrektheit der ausgeführten Funktionalitäten belegt, die Daten auf Vollständigkeit hin überprüft, die gewonnen Ergebnisse präsentiert und ausgewertet werden. 
+		
+		% Ergebnisse regionale Auswertung
+		Die untersuchte Region weist mit über 80~\% der Wohngebäude älter 45 Jahre einen überdurchschnittlich alten Wohngebäudebestand vor, was als Indikator für ein hohes energetisches Modernisierungspotential gewertet wird. Im Vergleich dazu verzeichnet die durchschnittliche Wohngebäude-Altersklassen-Verteilung in Deutschland einen Anteil von ca. 64~\% an Wohngebäuden älter 45 Jahre. Allerdings ist das Verhältnis vom Anteil bewohnter Mietwohnungen zu Eigentumswohnungen mit ca. 57 zu 35~\% höher als im bundesdeutschen Durchschnitt von ca. 51 zu 47~\%, wodurch das realistische Modernisierungspotential etwas geringer ausfallen dürfte als aufgrund der Altersstruktur zu vermuten wäre. 
+		
+		% Aufbereitung in QGIS
+		Für QGIS konnten auf die untersuchte Region zugeschnittene Basis-Layer mithilfe von ABK und OSM-Daten zuzüglich Layer-Style-Definitionen erstellt werden. Hausumringe wurden anhand zugewiesener Altersklassen und/oder anhand vorliegender Gebäudetypen eingefärbt visualisiert und verglichen. Es konnten Standorte für Energie-Erzeugungsanlagen mit Symbolisierung nach Anlagentyp gezeigt werden. Auch die Visualisierung estimierter, spezifischer Wärmeverbräuche für Sub-Areale konnte exemplarisch für Baublöcke Wuppertals demonstriert werden. Mit Vergleich zum Bestands-Wärmenetz der Wuppertaler Stadtwerke konnte gezeigt werden, dass gerade in den Ballungsräumen erhebliches Ausbaupotential für das Wärmenetz mit überdurschnittlich hohen möglichen Anschlussdichten besteht.
+		% Prognose / Potential Wärmebedarfsdeckung durch Erneuerbare in Wuppertal ? 
+		% Fernwärme? Zensus? 
+		
+		% Fazit Tool
+		Das entwickelte Python-Tool ist durch die Integration vieler Datensätze, den modularen Aufbau und die zahlreichen implementierten Funktionalitäten ein wertvolles Werkzeug für Wärmeplanungen und Forschung. Es kann in vollem Umfang für alle Regionen in NRW und in begrenztem Umfang in ganz Deutschland angewandt werden. 
+		
+
+	
+		% Intro - Aufgabelstellung erfüllt, Teilaufgaben im Folgenden
+		%%Im Zuge dieser Arbeit konnte ein Python-Tool zur systematischen Aufbereitung von Daten für Wärmeplanungen entwickelt und exemplarisch auf eine Beispielregion angewandt werden. Alle im Themenblatt erwähnten Aufgaben konnten mit gewissen Limitierungen erfüllt werden. 
+		
+		%- Recherche zu Parametern der Gebäudewärmeversorgung, check \\
+		%(Grundlagen und Analyse: Zensus, Hausumringe ALKIS, RWB-Modell LANUV)\\
+		%%Es wurde eine Recherche zu Parametern der Gebäudewärmeversorgung durchgeführt. Hierzu wurde eine Analyse der Ausgangssituation in Deutschland bezüglich des gesamten Wärmesektors durchgeführt. Es wurden Daten ermittelt zum Anteil des Wärmesektors am Gesamt-Energieverbrauch und zum Anteil der Raumwärme-, Warmwasser- und Prozesswärmebereitstellung am Gesamt-Wärmebedarf. Darüber hinaus wurde die Entwicklung der Anteile einzelner Energieträger für die Gesamt-Wärmeerzeugung in Deutschland gezeigt. Zudem konnte durch Analyse der Zensus-Daten der Anteil einzelner Heiztypen (wie Zentralheizung oder Etagenheizung) regional aufgeschlüsselt ermittelt werden. 
+		
+		%- Analyse der Sanierungsentwicklung und des -potentials in Deutschland, check \\
+		%(Grundlagen und Analyse: Altersklassenverteilung Zensus und HU Altersklassenzuweisung)\\
+		%%Auch eine Analyse der Sanierungsentwicklung und des -potentials in Deutschland konnte durchgeführt werden. Diese ist im Grundlagenkapitel beschrieben. Da Gebäudesanierungen nicht zentral erfasst werden und räumlich aufgelöste Daten hierzu fehlen, wurde die Alters- und Eigentumsstruktur von Wohngebäuden näher untersucht, da sich diese als maßgebliche Indikatoren für das energetische Modernisierungspotential erweisen. Hierfür wurde eine lokale Analyse der Gebäude- und Wohnungsdaten des Zensus 2011 durchgeführt und mit dem bundesdeutschen Durchschnitt verglichen. 
+			
+		%- Sichtung von öffentlich verfügbaren Daten und Analyse der Eignung bzgl. der Parameter, check\\
+		%(Datengrundlage und Analyse)\\
+		%%Für die Erstellung einer Datengrundlage für Wärmeplanungen wurden zunächst die Prozessschritte einer Wärmeplanung erklärt und zur Durchführung erforderliche Daten genannt. Als nächsten Schritt wurde eine Sichtung öffentlich verfügbarer Daten vorgenommen und diese auf deren Inhalt, Format und Eignung hin überprüft. Der Sichtungs-, Bewertungs- und Auswahlprozess sowie eine Beschreibung der einzelnen Datensätze ist im Kapitel Datengrundlage ausführlich beschrieben. 
+		
+		%- Auswahl der zu nutzenden Daten für deutschlandweite Analysen mit Fokus auf NRW, check\\
+		%(deutschlandweit: OSM, HU ALKIS, Zensus, theor. EE-Standorte MaStR)\\
+		%(NRW-weit: DGV, ABK, EE-Standorte LANUV, RWB-Modell LANUV)\\
+		%%Eine Auswahl zu nutzender Daten für deutschlandweite Analysen mit Fokus auf NRW wurde getroffen. Hierbei zeigten sich allerdings auch ein Mangel frei verfügbarer, räumlich hoch aufgelöster Verbrauchs- und Infrastrukturdaten und große Unterschiede im verfügbaren Datenbestand der einzelnen Länder. Ein Großteil der genutzten Daten deckt daher nur das Gebiet NRWs ab. Genutzte Raumwärme- und Warmwasserbedarfe basieren auf Abschätzungen im Raumwärmebedarfs-Modell des LANUV. 
+		
+		%- Entwicklung des python-Tools zum automatisierten Datenimport, -aufbereitung und QGis-Export, check\\
+		%(jo, passt, modular anwendbar für verschiedene Datensätze bzw. ggf. wenn nötig adaptierbar für andere Datenquellen in anderen Bundesländern)\\
+		%%Die Entwicklung eines python-Tools zum automatisierten Datenimport, -aufbereiten und -exportieren für QGIS wurde größtenteils umgesetzt. Der modulare Aufbau des Tools eignet sich zur Anwendung auf verschiedene Datensätze, wobei ein großer Teil der verwendeten Daten NRW-spezifisch sind. Für Anwendung in anderen Bundesländern muss der Programmcode gegebenenfalls auf die dortig verfügbaren Daten und deren Format angepasst werden. Zudem laufen Datenimport, -aufbereitung und -export in den meisten Fällen semiautomatisch ab, da ein manueller Download und Einstellen der Dateipfade vorrausgesetzt wird.
+		
+		%%Die Anwendung des entwickelten Tools auf eine Beispielregion wurde exemplarisch durchgeführt. Neben der Datenaufbereitung inklusive Zuschnitt, Filtern (Bereinigung) und gegebenenfalls Umformatierung zur Nutzung in QGIS wurde die Erstellung und Auswertung mehrerer automatisch generierter statistischer Analysen-Dateien gezeigt. 
+		
+
+	\section{Ausblick}
+		\textit{\frqq Die Gegenwart sollte an die Zukunft keine Fragen stellen, sondern Forderungen!\flqq} 
+		
+		[Erich Mühsam, \textit{Alle Macht den Räten}, 1930]\\ 
+		
+		Da Forschende neben mit ihrer Forschungsarbeit gleichfalls politische Akteur*innen sind und mit ihrer Arbeit an der politischen Willensbildung mitwirken, werden in diesem Ausblick frei nach dem Zitat Mühsams explizit Forderungen gestellt ebenso wie konventionellerweise Handlungsempfehlungen gegeben. \\
+		
+		\textbf{Handlungsempfehlungen und Forderungen an die Zukunft}\\
+		Um die Wärmewende weiter voran zu treiben sind legislative Maßnahmen wie die verpflichtende Erstellung von Wärmeplanungen für Kommunen ab einer gewissen Größe und Förderungen für deren Umsetzung sowie Mindestanforderungen an deren Zielsetzungen wichtige Schritte in die richtige Richtung, was Beispiele wie Dänemark zeigen. Ebenso wichtig ist allerdings auch die Umsetzung von Wärmeplänen und der im Zuge dieser entwickelten Strategien. Daher sollte auch die Umsetzung für Kommunen rechtlich bindend sein.
+		
+		Alle verfügbaren Daten, die zum Zwecke gemeinwohlorientierter Wärmeplanungen benötigt werden, sind Wärmeplanenden und Forschenden in diesem Bereich zugänglich zu machen. Die Befugnis zur Nutzung dieser Daten muss rechtlich gewährleistet werden. Dazu gehören u.a. Daten zur Infrastruktur von Versorgungsnetz-Betreibenden (Gas, Wärme, Wasser, Internet), zum Verbrauch von Versorgungsunternehmen (Gas, Öl, Wärme) und zur genauen Gebäudealtersstruktur von Katasterämtern. 
+		
+		Wärmenetze als Systemdienstleistende in integrierten zukunftsfähigen Energiesystemen müssen klimatisch, ökologisch und sozial gemeinwohlorientiert geplant, installiert und betrieben werden. Ausnutzung natürlicher Monopolstellungen zu Preismissbrauch und langfristig planmäßiger Betrieb auf Basis fossiler Brennstoffe ist auszuschließen. 
+		
+		Forschung zum Erschließungspotential Erneuerbarer Energiequellen muss weiter gefördert und ausgebaut werden. Es müssen detaillierte Daten zu Potentialen von Abwärme (z.B. aus Industrieprozessen, Serverfarmen, Fertigungsanlagen und Abwasser), Umweltwärme (z.B. Seen, Flüsse und Grubenwasser), Photovoltaik/Solarthermie (auf Frei- und Dachflächen), Geothermie (oberflächennah, mitteltief und tief) und Biomasse (z.B. nachwachsender Reststoffe und Energiepflanzen, organischer Abfälle, Klärgas und Biogas) gesammelt und Werkzeuge zu deren Ermittlung entwickelt werden, damit Wärmeplanungen durchgeführt werden können. Gute Beispiele hierfür bieten die Potentialstudien des LANUV.\\
+		
+		\textbf{Begründung der genannten Forderungen}\\ 
+		Die genannten Forderungen sind nach persönlicher Einschätzung und Bewertung der Ausgangssituation des Wärmesektors, des gegenwärtigen Stadiums des Klimawandels und der aktuellen politischen Situation mit geplanter Einführung obligatorischer Wärmeplanungen angemessen und deren Umsetzung notwendig. Die Forderungen begründen sich zum Einen in der Dringlichkeit der Energiewende, um massive ökosoziale Folgeschäden eines ungebremsten Klimawandels zu verhindern sowie der essentiellen Bedeutung von Wärmeplanung für die Wärmewende. Zum Anderen gebietet das Grundgesetz durch Art. 2 Abs. 2 Satz 1 die ausdrückliche Stellung dieser Forderungen und durch Art. 2 Abs. 2 Satz 1, Art. 14 Abs. 2 und Art. 20a die Gewährleistung der Umsetzung aller geforderten Maßnahmen durch Exekutive, Legislative und Judikative. \\
+		
+		\textbf{Weiterentwicklung des erstellten Python-Tools und dieser Arbeit}\\
+		Im Folgenden sind einige Ideen und Vorschläge zur Weiterentwicklung des entwickelten Python-Tools genannt. 
+		
+		Die Software-Architektur sollte grundlegend umstrukturiert werden zur besseren Integration weiterer Datensätze und Funktionalitäten. Anbieten würde sich ein Main-Script, in welchem für alle ausgewählten zu verwendenden Datensätze je eigene Scripte aufgerufen werden. Alle definierten Funktionen und Klassen sollten in eigenen datensatz-spezifische Libraries statt in einer singulären Library definiert werden, gleiches gilt für datensatz-unspezifische Funktionen. Dieser Aufbau würde insbesondere beim weiteren Ausbau des Software-Tools sowohl die Übersichtlikeit verbessern, als auch den Grad der Modularität erhöhen. Je nach verwendeten Datensätzen ließen sich so nur Teile des entwickelten Tools laden. 
+		
+		Für das Tool sollte zusätzlich eine default-Ordnerstruktur für alle hinterlegten bzw. zu hinterlegenden Daten definiert werden, um die Definition von Dateipfaden zu vereinfachen und die Daten übersichtlicher zu sammeln. 
+		
+		Für die einfachere Bedienbarkeit des Tools für Menschen sollte ein interaktiver Modus als default-Modus integriert werden, in welcher alle Optionen und verwendeten Dateipfade von User*innen erfragt und als Einstellungen abgespeichert werden. Dies könnte die Nutzung des Tools für weniger programmier-affine Menschen erleichtern. 
+		
+		Für eine "Out-of-the-Box"-Nutzung des Tools könnte eine vollständige Automatisierung der Datenaufbereitung aller im Tool verwendeten Datensätze durch automatischen Download anhand hinterlegter URLs implementiert werden. 
+		
+		Für eine Anwendung der Pre-Analyse-Routinen, sollten diese optinal für Teilbereiche durchgeführt werden können. Beispielsweise durch temporären Zuschnitt der bereits präprozessierten Daten z.B. auf ein Stadtgebiet, um die dortigen Altersklassenverteilungen und ähnliches besser analysieren zu können.
+		
+		Zur besseren Verwendbarkeit des Tools in anderen Bundesländern als NRW bietet sich die Integration der bundesweit verfügbaren Daten des Marktstammregisters (MaStR) zu Energie-Erzeugungs-Anlagen an. Empfehlenswert wäre hierbei eine Aufbereitung ähnlich zur gegebenen Struktur des Energie-Erzeugungs-Anlagen Datensatzes des LANUV. 
+		
+		Als hilfreiche alternative Basis-Layer für QGIS bietet sich potentiell die Aufbereitung verfügbarer Satellitenfotos an. 
+		
+		Auch die Integration der 3D-Gebäudemodellen LoD1 und/oder LoD2 des BKG könnte erprobt werden. Für Kommunen ohne Zugang zu genauen Verbrauchsdaten oder estimierter Verbrauchsdaten wie jenen im RWB-Modell des LANUV können diese zur Erstellung eines eigenen RWB-Modell nach Vorbild des LANUV auf Basis von ALKIS-Hausumringen und LoD genutzt werden. Die Modelle können eventuell durch Abschätzung von Altersklassen anhand der Gebäudedaten des Zensus 2011 oder zukünftig des Zensus 2022 verfeinert und gegebenenfalls zur Optimierung des Modells mit verfügbaren realen Verbrauchsdaten abgeglichen werden. 
+		
+		Die Post-Prozessierungs-Routine zur Aggregation von Werten für Sub-Areale könnte ausgebaut werden durch Integration von Erzeugungs-Daten anhand der Daten des LANUV oder des MaStR. Zudem bietet sich die Implementation von INSPIRE-konformen Gitterzellen als default Sub-Areale an. Die Anwendung der Routine wurde exemplarisch für Baublöcke Wuppertals demonstriert, lässt sich aber durch minimale Anpassung für jegliche Polygone anwenden. 
+		
+		Darüber hinaus sollten weitere Daten gesichtet werden. Beispiele hierfür können beispielsweise die Daten Geologischer Dienste sein, welche in dieser Arbeit kaum untersucht wurden. Dazu gehören beispielsweise auch Daten, welche wie Web-Dienst zum Einbinden in GIS via url angeboten werden. Zum automatisierten Import solcher Daten in QGIS könnte seperates Tools entwickelt werden, gegebenfalls mit zusätzlicher Aufbereitung innerhalb von QGIS. 
+		
+		
